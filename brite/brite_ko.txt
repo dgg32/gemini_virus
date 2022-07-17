@@ -1,0 +1,584 @@
++C	Viral protein
+!
+AdsDNA-RT viruses
+B  Hepatitis B virus
+C    K23128  S; HBV large envelope protein
+C    K23129  C; HBV capsid protein
+C    K21854  X; HBV protein X
+C    K21037  P; Hepadnaviridae DNA polymerase / reverse transcriptase / ribonuclease H [EC:2.7.7.7 2.7.7.49 3.1.26.4]
+AssRNA-RT viruses
+B  Human T-cell leukemia virus
+C    K23017  gag; HTLV-1 gag polyprotein
+C    K23454  gag-pro-pol; HTLV-1 gag-pro-pol polyprotein
+C    K25051  MA; HTLV-1 matrix protein
+C    K25052  CA; HTLV-1 capsid protein
+C    K25053  NC; HTLV-1 nucleocapsid protein
+C    K25054  PR; HTLV-1 protease [EC:3.4.23.-]
+C    K25055  RT; HTLV-1 reverse transcriptase / ribonuclease H [EC:2.7.7.49 2.7.7.7 3.1.26.4]
+C    K25056  IN; HTLV-1 integrase
+C    K19259  env; HTLV envelope glycoprotein gp62
+C    K24862  gp46; HTLV envelope surface glycoprotein gp46
+C    K24863  gp21; HTLV envelope transmembrane protein gp21
+C    K23018  rex; HTLV-1 rex polyprotein
+C    K21857  tax; HTLV protein Tax-1
+C    K23069  p12I; HTLV-1 accessory protein p12I
+C    K23070  p13; HTLV-1 accessory protein p13
+C    K23068  p30II; HTLV-1 accessory protein p30II
+C    K23071  HBZ; HTLV-1 basic zipper factor
+B  Human immunodeficiency virus
+C    K22951  gag, gag-pol; HIV Gag or Gag-Pol polyprotein
+C    K25666  MA; HIV-1 matrix protein
+C    K25306  CA; HIV capsid protein
+C    K25664  NC; HIV-1 nucleocapsid protein
+C    K25667  p6gag; HIV-1 p6-gag
+C    K22599  PR; HIV protease [EC:3.4.23.16 3.4.23.47]
+C    K24802  RT; HIV-1 reverse transcriptase / ribonuclease H [EC:2.7.7.49 2.7.7.7 3.1.26.13]
+C    K24803  IN; HIV-1 integrase
+C    K22892  vif; HIV-1 virion infectivity factor
+C    K22202  vpr; HIV-1 virus protein R
+C    K19258  tat; HIV-1 protein Tat
+C    K25665  rev; HIV protein Rev
+C    K22890  vpu; HIV-1 protein Vpu
+C    K19287  env, gp160; HIV envelope glycoprotein gp160
+C    K24266  gp120; HIV envelope glycoprotein gp120
+C    K24801  gp41; HIV transmembrane fusion protein gp41
+C    K22891  nef; HIV-1 protein Nef
+B  Rous sarcoma virus
+C    K23453  src; RSV tyrosine-protein kinase transforming protein Src [EC:2.7.10.2]
+AdsRNA viruses
+B  Rotavirus
+C    K25309  VP1; Rotavirus RNA-directed RNA polymerase [EC:2.7.7.48]
+C    K25310  VP3; Rotavirus protein VP3 [EC:3.1.4.- 2.7.7.50 2.1.1.56]
+C    K24598  VP2; Rotavirus core capsid protein VP2
+C    K24597  VP6; Rotavirus inner capsid protein VP6
+C    K19249  VP4; Rotavirus outer capsid protein VP4
+C    K24596  VP7; Rotavirus outer capsid protein VP7
+C    K24592  NSP1-1; Rotavirus nonstructural protein 1-1
+B  Colorado tick fever virus
+C    K25311  VP1; Coltivirus RNA-directed RNA polymerase [EC:2.7.7.48]
+C    K25312  VP2; Coltivirus RNA methyltransferase VP2 [EC:2.1.1.-]
+C    K25313  VP3; Coltivirus protein VP3
+B  Mammalian orthoreovirus
+C    K19250  S1; Mammalian orthoreovirus 3 outer capsid protein sigma-1
+B  Reptilian orthoreovirus
+C    K24593  p14; Orthoreovirus FAST protein
+A+ssRNA viruses
+B  Hepatitis A virus (Hepatovirus A)
+C    K25922  3C; Hepatitis A virus protease 3C [EC:3.4.22.28]
+B  Hepatitis C virus (Hepacivirus C)
+C    K22271  Core; HCV core protein
+C    K24861  E1; HCV envelope glycoprotein E1
+C    K22272  E2; HCV envelope glycoprotein E2
+C    K19358  HCVgp1; HCV polyprotein
+C    K22497  NS2; HCV non-structural protein 2 [EC:3.4.22.-]
+C    K22274  NS4A; HCV non-structural protein 4A
+C    K22498  NS4B; HCV non-structural protein 4B
+C    K22275  NS5A; HCV non-structural protein 5A
+C    K22472  NS5B; HCV RNA-dependent RNA polymerase [EC:2.7.7.48]
+C    K22273  NS3; HCV serine protease / helicase NS3 [EC:3.4.21.98 3.6.1.15 3.6.4.13]
+B  Coronavirus
+C    K24149  pp1ab; SARS coronavirus replicase polyprotein 1ab
+C    K25011  nsp1; SARS coronavirus host translation inhibitor nsp1
+C    K25012  nsp2; SARS coronavirus non-structural protein 2
+C    K25013  nsp3; SARS coronavirus non-structural protein 3 [EC:3.4.19.12]
+C    K25924  nsP3; Alphacoronavirus papain-like proteinase 1/2 [EC:3.4.19.12 3.4.22.-]
+C    K25014  nsp4; SARS coronavirus non-structural protein 4
+C    K25015  nsp5; SARS coronavirus 3C-like proteinase
+C    K25926  nsp5; Alphacoronavirus 3C-like proteinase [EC:3.4.22.-]
+C    K25016  nsp6; SARS coronavirus non-structural protein 6
+C    K25017  nsp7; SARS coronavirus non-structural protein 7
+C    K25018  nsp8; SARS coronavirus non-structural protein 8
+C    K25019  nsp9; SARS coronavirus non-structural protein 9
+C    K25020  nsp10; SARS coronavirus non-structural protein 10
+C    K25021  nsp12; SARS coronavirus RNA-directed RNA polymerase [EC:2.7.7.48]
+C    K25022  nsp13; SARS coronavirus helicase [EC:5.6.2.3 3.6.4.13]
+C    K25023  nsp14; SARS coronavirus proofreading exoribonuclease [EC:3.1.13.-]
+C    K25024  nsp15; SARS coronavirus uridylate-specific endoribonuclease
+C    K25025  nsp16; SARS coronavirus 2'-O-methyltransferase [EC:2.1.1.-]
+C    K24152  S; SARS coronavirus spike glycoprotein
+C    K25001  S1; SARS coronavirus spike protein S1
+C    K25002  S2; SARS coronavirus spike protein S2
+C    K24324  S; MERS coronavirus spike glycoprotein
+C    K24325  S; Betacoronavirus (excluding SARS and MERS) spike glycoprotein
+C    K19254  S; Coronaviridae (excluding betacoronavirus) spike glycoprotein
+C    K24151  E; SARS coronavirus envelope small membrane protein
+C    K24150  M; SARS coronavirus membrane protein
+C    K24106  N; SARS coronavirus nucleocapsid protein
+C    K24579  3a; SARS coronavirus accessory protein 3a
+C    K24580  6; SARS coronavirus accessory protein 6
+C    K24581  7a; SARS coronavirus accessory protein 7a
+C    K24582  7b; SARS coronavirus accessory protein 7b
+C    K24583  8; SARS coronavirus accessory protein 8
+C    K24584  10; SARS coronavirus accessory protein 10
+C    K24546  HE; Betacoronavirus hemagglutinin-esterase [EC:3.1.1.53]
+B  Alphavirus
+C    K25300  gp1; Alphavirus polyprotein P1234
+C    K19288  p130; Alphavirus structral polyprotein
+C    K25804  E1; Alphavirus spike glycoprotein E1
+C    K25126  E2; Alphavirus spike glycoprotein E2
+C    K25929  C; Alphavirus capsid protein [EC:3.4.21.90]
+C    K25923  nsP2; Alphavirus protease nsP2 [EC:3.4.22.-]
+B  Dengue virus
+C    K24570  POLY; Flavivirus structral polyprotein
+C    K25003  E; Flavivirus envelope protein E
+B  Rubella virus
+C    K24860  p110; Rubivirus structral polyprotein
+C    K25925  p150; Rubella virus protease/methyltransferase p150 [EC:3.4.22.-]
+C    K25128  E1; Rubivirus spike glycoprotein E1
+B  Enterovirus
+C    K25281  gp1; Enterovirus genome polyprotein
+C    K25928  VP0; Enterovirus capsid protein VP0
+C    K25127  VP1; Enterovirus C capsid protein VP1
+C    K25293  2A; Enterovirus protease 2A [EC:3.4.22.29]
+C    K25294  2B; Enterovirus protein 2B
+C    K01516  2C; Enterovirus protein 2C [EC:3.6.1.15]
+C    K25295  3AB; Enterovirus protein 3AB
+C    K25296  3A; Enterovirus protein 3A
+C    K25297  3B; Enterovirus viral protein genome-linked
+C    K25298  3CD; Enterovirus protein 3CD
+C    K25299  3C; Enterovirus protease 3C [EC:3.4.22.28]
+C    K00985  3D; Enterovirus RNA-directed RNA polymerase [EC:2.7.7.48]
+B  Norovirus
+C    K25320  NS1_2; Norovirus protein p48
+C    K25321  NS4; Norovirus protein p22
+C    K25322  NS5; Norovirus viral genome-linked protein
+C    K25324  NS3; Norovirus NTPase [EC:3.6.1.15]
+C    K25325  NS6; Norovirus 3C-like protease [EC:3.4.22.66]
+C    K25323  NS7; Norovirus RNA-directed RNA polymerase [EC:2.7.7.48]
+B  Zika virus
+C    K25327  NS1; Flavivirus non-structural protein 1
+C    K25331  NS2A; Flavivirus non-structural protein 2A
+C    K25330  NS4A; Flavivirus non-structural protein 4A
+C    K25326  NS4B; Flavivirus non-structural protein 4B
+C    K25329  NS2B; Flavivirus serine protease subunit NS2B
+C    K25328  NS3; Flavivirus serine protease NS3 catalytic subunit [EC:3.4.21.91 3.6.1.15 3.6.4.13]
+C    K25332  NS5; Flavivirus RNA-directed RNA polymerase NS5 [EC:2.1.1.56. 2.1.1.57 2.7.7.48]
+B  Beet yellows virus
+C    K21077  1a-1b; Beet yellows virus replicase polyprotein 1ab
+B  Tomato bushy stunt virus
+C    K21535  p22; Tombusvirus movement protein
+A-ssRNA viruses
+B  Measles virus
+C    K19376  L; Morbillivirus RNA-directed RNA polymerase L [EC:2.7.7.48 3.6.1.- 2.7.7.88 2.1.1.-]
+C    K19378  H; Morbillivirus hemagglutinin glycoprotein
+C    K19379  F; Morbillivirus fusion glycoprotein F0
+C    K19380  N; Morbillivirus nucleoprotein
+C    K19381  M; Morbillivirus matrix protein
+C    K19377  P, P/V/C; Morbillivirus phosphoprotein
+C    K22280  C; measles protein C
+B  Influenza A virus
+C    K19389  PB1; Influenza virus RNA-directed RNA polymerase catalytic subunit [EC:2.7.7.48]
+C    K19392  NA; Influenza A/B virus neuraminidase [EC:3.2.1.18]
+C    K19390  PA; Influenza virus polymerase acidic protein
+C    K25146  PA-X; Influenza A virus protein PA-X
+C    K19388  PB2; Influenza virus polymerase basic protein 2
+C    K19391  NP; Influenza virus nucleoprotein
+C    K19395  NEP, NS2; Influenza A virus nuclear export protein
+C    K19396  NS1; Influenza A virus non-structural protein 1
+C    K19393  M1; Influenza A/B virus matrix protein 1
+C    K19394  M2; Influenza A virus matrix protein 2
+C    K19397  PB1F2; Influenza A virus protein PB1-F2
+C    K19251  HA; Influenza A virus hemagglutinin
+C    K25160  HA1; Influenza A virus hemagglutinin HA1 chain
+C    K25161  HA2; Influenza A virus hemagglutinin HA2 chain
+B  Influenza B virus
+C    K25502  HA; Influenza B virus hemagglutinin
+B  Influenza C virus
+C    K19253  HE, HEF; Influenza C virus hemagglutinin-esterase-fusion glycoprotein [EC:3.1.1.53]
+C    K22201  CM2; Influenza C virus CM2 channel family protein
+B  Lassa virus (Lassa mammarenavirus)
+C    K24320  GPC; Old World arenavirus glycoprotein
+C    K25125  GP1; Old World arenavirus glycoprotein GP1
+C    K25319  GP2; Old World arenavirus glycoprotein GP2
+C    K25301  N; Mammarenavirus nucleoprotein [EC:3.1.13.-]
+C    K25302  Z; Mammarenavirus RING finger protein Z
+C    K25303  L; Mammarenavirus RNA-dependent RNA polymerase L [EC:2.7.7.48 3.1.-.-]
+B  Arenavirus
+C    K24322  GPC; New World clade A arenavirus glycoprotein
+C    K24321  GPC; New World clade B/D arenavirus glycoprotein
+C    K25122  GP1; New World clade B arenavirus glycoprotein GP1
+C    K24323  GPC; New World clade C arenavirus glycoprotein
+B  Human respiratory syncytial virus (Human orthopneumovirus)
+C    K22613  vCX3C; RSV chemokine CX3C homolog
+B  Human metapneumovirus
+C    K19261  F; Pneumoviridae fusion glycoprotein F0
+B  Hendra virus (Hendra henipavirus)
+C    K24547  F; Henipavirus fusion glycoprotein F0
+C    K24957  G; Henipavirus glycoprotein G
+B  Human parainfluenza virus (Human respirovirus)
+C    K25521  L; Respirovirus RNA-directed RNA polymerase L
+C    K25339  P; Respirovirus phosphoprotein
+C    K25340  N; Respirovirus nucleoprotein
+C    K24549  F; Rubulavirus fusion glycoprotein F0
+B  Hantaan virus (Hantaan orthohantavirus)
+C    K24571  GP; Orthohantavirus envelopment polyprotein
+B  Bunyamwera virus
+C    K24572  GP; Orthobunyavirus envelopment polyprotein
+B  Crimean-Congo hemorrhagic fever virus (Crimean-Congo hemorrhagic fever orthonairovirus)
+C    K25347  L; Orthonairovirus RNA-dependent RNA polymerase L [EC:2.7.7.48 3.4.19.12]
+C    K25348  N; Orthonairovirus nucleoprotein
+C    K24573  GP; Orthonairovirus envelopment polyprotein
+B  Rabies virus (Rabies lyssavirus)
+C    K25341  P; Lyssavirus phosphoprotein
+C    K25342  N; Lyssavirus nucleoprotein
+C    K24589  G; Lyssavirus glycoprotein
+B  Thogoto thogotovirus
+C    K24591  GP; Thogotovirus envelope glycoprotein
+B  Phlebovirus
+C    K24859  GP; phenuiviridae envelopment polyprotein
+B  La Crosse virus
+C    K25345  L; Orthobunyavirus RNA-dependent RNA polymerase L [EC:2.7.7.48 3.1.-.-]
+C    K25346  N; Orthobunyavirus nucleoprotein
+B  Zaire ebolavirus
+C    K25333  L; Ebolavirus RNA-dependent RNA polymerase L [EC:2.7.7.48 2.7.7.88 3.6.1.- 2.1.1.-]
+C    K25334  VP35; Ebolavirus polymerase cofactor VP35
+C    K25335  NP; Ebolavirus nucleoprotein
+C    K24534  GP; Ebolavirus envelope glycoprotein
+B  Marburg marburgvirus
+C    K25336  L; Marburgvirus RNA-dependent RNA polymerase L [EC:2.7.7.48 2.7.7.88 3.6.1.- 2.1.1.-]
+C    K25337  VP35; Marburgvirus polymerase cofactor VP35
+C    K25338  NP; Marburgvirus nucleoprotein
+C    K24535  GP; Marburgvirus envelope glycoprotein
+B  Lloviu cuevavirus
+C    K24533  GP2; Cuevavirus envelope glycoprotein 2
+B  Borna disease virus
+C    K21924  L; Orthobornavirus RNA-directed RNA polymerase [EC:2.7.7.48]
+B  Sendai virus (Murine respirovirus)
+C    K19247  HN; Respirovirus hemagglutinin-neuraminidase [EC:3.2.1.18]
+C    K24548  F; Respirovirus fusion glycoprotein F0
+B  Vesicular stomatitis Indiana virus
+C    K21316  L; Rhabdoviridae RNA-directed RNA polymerase [EC:2.7.7.48 2.1.1.375 2.7.7.88]
+C    K24590  G; Vesiculovirus glycoprotein
+B  Avian avulavirus
+C    K24545  F; Avulavirus fusion glycoprotein F0
+B  Obodhiang virus
+C    K24588  G; Ephemerovirus glycoprotein
+AdsDNA viruses
+B  Kaposi's sarcoma-associated herpesvirus (Human herpesvirus 8)
+C    K21670  vIL6, K2; KSHV interleukin 6
+C    K21667  vGPCR; KSHV G-protein coupled receptor
+C    K21664  vLANA, ORF73; KSHV latency-associated nuclear antigen
+C    K21663  vCyclin, ORF72; KSHV cyclin homolog
+C    K21660  vBCL2, ORF16; KSHV apoptosis regulator BCL2 homolog
+C    K21653  vIRF1, K9; KSHV interferon regulatory factor-like protein 1
+C    K21654  vIRF2, K11; KSHV interferon regulatory factor-like protein 2
+C    K21652  vIRF3; KSHV interferon regulatory factor-like protein 3
+C    K21858  vIRF4, K10; KSHV interferon regulatory factor-like protein 4
+C    K21661  vIAP, K7; KSHV inhibitor of apoptosis protein
+C    K21662  vFLIP, K13, ORF71; KSHV FLICE inhibitory protein
+C    K21657  K4; KSHV macrophage inflammatory protein 2
+C    K21649  ORF4; KSHV complement control protein
+C    K21651  K15; KSHV signal transducing membrane protein
+C    K21860  K14; KSHV OX-2 membrane glycoprotein
+C    K21669  K1; KSHV protein K1
+C    K21658  K4.1; KSHV protein vCCL3
+C    K21659  K6; KSHV protein K6
+C    K21656  K12; KSHV protein K12
+C    K21861  ORF35; KSHV protein ORF35
+C    K21650  KIE1, ORF50; KSHV transcription activator ORF50
+C    K21859  KIE2, ORF45; KSHV transcription activator ORF45
+C    K21665  MIR1, K3; KSHV E3 ubiquitin-protein ligase MIR1 [EC:2.3.2.36]
+C    K21666  MIR2, K5; KSHV E3 ubiquitin-protein ligase MIR2 [EC:2.3.2.36]
+C    K21655  K8; KSHV E3 SUMO-protein ligase K-bZIP
+B  Epstein-Barr virus (Human herpesvirus 4)
+C    K25244  BSLF1; Lymphocryptovirus DNA primase [EC:2.7.7.-]
+C    K19455  BGLF4; EBV serine/threonine-protein kinase BGLF4 [EC:2.7.11.1]
+C    K22972  BPLF1; EBV large tegment protein deneddylase [EC:3.4.19.12]
+C    K25246  BBLF4, HELI; Lymphocryptovirus DNA replication helicase [EC:5.6.2.-]
+C    K25247  BMRF1; Lymphocryptovirus DNA polymerase processivity factor
+C    K25245  BBLF2/3; Lymphocryptovirus DNA helicase/primase complex-associated protein
+C    K25248  BALF2, DBP; Lymphocryptovirus major DNA-binding protein
+C    K21533  vIL10; EBV viral interleukin 10
+C    K22974  BNLF2A; EBV protein BNLF2a
+C    K19461  EBNA1, BKRF1; EBV nuclear antigen 1
+C    K19457  EBNA2; EBV nuclear antigen 2
+C    K21855  EBNA3, EBNA3A; EBV nuclear antigen 3
+C    K21856  EBNA4, EBNA3B; EBV nuclear antigen 4
+C    K19458  EBNA6, EBNA3C; EBV nuclear antigen 6
+C    K19456  EBNALP; EBV nuclear antigen leader protein
+C    K19459  LMP1; EBV latent membrane protein 1
+C    K19460  LMP2A; EBV latent membrane protein 2A
+C    K23074  LMP2B; EBV latent membrane protein 2B
+C    K19454  BMLF1; EBV mRNA export factor ICP27
+C    K19463  BHRF1; EBV apoptosis regulator BHRF1
+C    K19462  BZLF1; EBV trans-activator protein BZLF1
+C    K24585  BZLF2; Lymphocryptovirus glycoprotein 42
+C    K19453  BBRF2; EBV virion egress protein UL7
+C    K21532  BNRF1; EBV major tegument protein
+C    K19450  BLLF1; EBV envelope glycoprotein GP350
+C    K22973  BARF1; EBV secreted protein BARF1
+C    K22975  BILF1; EBV G-protein coupled receptor BILF1
+C    K19451  gH; EBV envelope glycoprotein H
+C    K19452  gL; EBV envelope glycoprotein L
+C    K25930  assemblin; Herpesviridae assemblin [EC:3.4.21.97]
+B  Human papillomavirus
+C    K19260  L1; HPV major capsid protein L1
+C    K21808  L2; HPV minor capsid protein L2
+C    K21810  E1; HPV replication protein E1 [EC:5.6.2.-]
+C    K21811  E2; HPV regulatory protein E2
+C    K21812  E5; HPV protein E5
+C    K21807  E6; HPV protein E6
+C    K21809  E7; HPV protein E7
+B  Human herpes simplex virus
+C    K19441  US1; Simplexvirus transcriptional regulator ICP22
+C    K19445  ICP4, RS1; Simplexvirus major viral transcription factor ICP4
+C    K19437  RL1; HSV1 neurovirulence factor ICP34.5
+C    K19443  UL54; Simplexvirus mRNA export factor
+C    K19448  UL39; Simplexvirus ribonucleoside-diphosphate reductase large subunit [EC:1.17.4.1]
+C    K25235  UL52; Simplexvirus DNA primase [EC:2.7.7.-]
+C    K19439  US3; Simplexvirus serine/threonine-protein kinase US3 [EC:2.7.11.1]
+C    K19440  UL13; Simplexvirus serine/threonine-protein kinase UL13 [EC:2.7.11.1]
+C    K19447  UL41; Simplexvirus virion host shutoff protein [EC:3.1.27.-]
+C    K25237  UL5, HELI; Simplexvirus DNA replication helicase [EC:5.6.2.3]
+C    K19436  ICP0, RL2; Simplexvirus E3 ubiquitin-protein ligase ICP0
+C    K25236  UL8; Simplexvirus DNA helicase/primase complex-associated protein
+C    K25238  UL42; Simplexvirus DNA polymerase processivity factor
+C    K19438  US11; HSV1 RNA-binding protein
+C    K19442  ICP8, DBP, UL29; Simplexvirus major DNA-binding protein
+C    K21501  UL9; Alphaherpesvirinae replication origin-binding protein
+C    K23212  UL46; HSV tegument protein VP11/12
+C    K19444  UL48; Simplexvirus tegument protein VP16
+C    K19255  gB; Herpesviridae envelope glycoprotein B
+C    K19256  gC; Simplexvirus envelope glycoprotein C
+C    K19264  gD; Simplexvirus envelope glycoprotein D
+C    K19434  gH, UL22; Simplexvirus envelope glycoprotein H
+C    K19435  gL, UL1; Simplexvirus envelope glycoprotein L
+C    K19446  US12; HSV1 ICP47 protein
+B  Human cytomegalovirus (Human herpesvirus 5)
+C    K21046  UL146; HCMV chemokine vCXCL1
+C    K22782  UL33; Cytomegalovirus G-protein coupled receptor UL33
+C    K21043  UL16; HCMV immunoevasion protein
+C    K21047  UL144; HCMV TNF alpha-like receptor UL144
+C    K21041  UL7_8; HCMV CEACAM1-like protein
+C    K21042  UL11; HCMV protein UL11
+C    K21044  UL40; HCMV protein UL40
+C    K21049  UL141; Cytomegalovirus protein UL141
+C    K22780  UL26; Cytomegalovirus tegument protein UL26
+C    K22779  UL82; Cytomegalovirus tegument protein pp71
+C    K21045  UL83; Cytomegalovirus tegument protein UL83
+C    K25239  UL70; Cytomegalovirus DNA primase [EC:2.7.7.-]
+C    K21078  UL80; Betaherpesvirinae capsid scaffolding protein [EC:3.4.21.97]
+C    K25241  UL105, HELI; Cytomegalovirus DNA replication helicase [EC:5.6.2.-]
+C    K25242  UL44; Cytomegalovirus DNA polymerase processivity factor
+C    K25240  UL102; Cytomegalovirus DNA helicase/primase complex-associated protein
+C    K25243  UL57, DBP; Cytomegalovirus major DNA-binding protein
+C    K22784  UL22A; HCMV glycoprotein UL22A
+C    K21050  US2; HCMV unique short US2 glycoprotein
+C    K21051  US10; HCMV unique short US10 glycoprotein
+C    K22787  US3; HCMV membrane glycoprotein US3
+C    K22785  US6; HCMV membrane glycoprotein US6
+C    K22786  US11; HCMV membrane glycoprotein US11
+C    K21048  UL142; HCMV membrane glycoprotein UL142
+C    K22783  US27; HCMV envelope glycoprotein US27
+C    K22781  US28; HCMV envelope protein US28
+C    K19257  gM; Herpesviridae envelope glycoprotein M
+C    K22773  gB, UL55; Betaherpesvirinae envelope glycoprotein B
+C    K25798  gO, UL74; Cytomegalovirus envelope glycoprotein O
+C    K22777  gH, UL75; Cytomegalovirus envelope glycoprotein H
+C    K22778  gL, UL115; Cytomegalovirus envelope glycoprotein L
+C    K25799  UL130; Cytomegalovirus envelope glycoprotein UL130
+C    K25800  UL131A; Cytomegalovirus envelope glycoprotein UL131A
+C    K22789  UL37; UL37 HCMV immediate early glycoprotein
+C    K22774  UL123; HCMV immediate-early protein 1
+C    K22775  UL122; Cytomegalovirus viral transcription factor IE2
+C    K22788  UL36; Cytomegalovirus viral inhibitor of caspase-8-induced apoptosis
+C    K22776  UL38; Cytomegalovirus apoptosis inhibitor UL38
+B  Human herpesvirus 6
+C    K25249  U43; Roseolovirus DNA primase [EC:2.7.7.-]
+C    K25251  U77, HELI; Roseolovirus DNA replication helicase [EC:5.6.2.-]
+C    K25252  U27; Roseolovirus DNA polymerase processivity factor
+C    K25250  U74; Roseolovirus DNA helicase/primase complex-associated protein
+C    K25253  U41, DBP; Roseolovirus major DNA-binding protein
+C    K23392  vCCL4a, U83; HHV6 CCRs chemokine agonist
+C    K21040  vCCL4b, U83; HHV6 CCR2 chemokine agonist
+C    K23431  HHV6-U12; HHV6 CC-chemokine receptor U12
+C    K23433  HHV6-U51; HHV6 G-protein coupled receptor homolog U51
+C    K24959  gH; HHV6A/B envelope glycoprotein H
+C    K24960  gL; HHV6A/B envelope glycoprotein L
+C    K24961  gQ, U100; HHV6A/B glycoprotein Q
+B  Human herpesvirus 7
+C    K23432  HHV7-U12; HHV7 CC-chemokine receptor U12
+C    K23434  HHV7-U51; HHV7 G-protein coupled receptor homolog U51
+B  Herpesvirus
+C    K18964  UL30, UL54, BALF5, U38; Herpesvirus DNA polymerase catalytic subunit [EC:2.7.7.7]
+C    K21075  UL36, UL48; Herpesviridae large tegument protein deneddylase [EC:3.4.19.12 3.4.22.-]
+C    K23382  gG; Simplexvirus envelope glycoprotein G
+B  Human adenovirus
+C    K25066  L2; Adenoviridae penton base protein
+C    K21076  L3; Mastadenovirus pre-protein VI
+C    K19262  L5; Mastadenovirus fiber protein
+C    K21923  POL; Adenovirus DNA polymerase [EC:2.7.7.7]
+C    K25256  E2A, DBP; Mastadenovirus DNA-binding protein
+C    K25257  E1A; Mastadenovirus E1A protein
+C    K25258  E1B; Mastadenovirus E1B protein
+C    K25259  E4; Mastadenovirus E4 protein
+B  JC polyomavirus
+C    K19248  VP1; Polyomaviridae major capsid protein VP1
+B  Poxvirus
+C    K22612  vVEGFA; Poxvirus vascular endothelial growth factor A homolog
+C    K21538  vTNFR2; Poxvirus tumor necrosis factor receptor II
+C    K23381  vCCI; Poxvirus chemokine inhibitor
+C    K23427  7L; Poxvirus chemokine receptor 7L
+C    K23426  134R; YLDV 134R protein
+C    K23428  2L; TPV TNF binding protein 2L
+B  Vaccinia virus
+C    K21516  PAPS; Orthopoxvirus cap-specific mRNA (nucleoside-2'-O-)-methyltransferase [EC:2.1.1.57]
+C    K25273  RPO147; Poxviridae DNA-directed RNA polymerase 147 kDa subunit [EC:2.7.7.6]
+C    K25274  RPO132; Poxviridae DNA-directed RNA polymerase 133 kDa subunit [EC:2.7.7.6]
+C    K25275  RPO30; Poxviridae DNA-directed RNA polymerase 30 kDa subunit [EC:2.7.7.6]
+C    K25276  RPO35; Poxviridae DNA-directed RNA polymerase 35 kDa subunit [EC:2.7.7.6]
+C    K25277  RPO22; Poxviridae DNA-directed RNA polymerase 22 kDa subunit [EC:2.7.7.6]
+C    K25278  RPO7; Poxviridae DNA-directed RNA polymerase 7 kDa subunit [EC:2.7.7.6]
+C    K25279  RPO19; Poxviridae DNA-directed RNA polymerase 19 kDa subunit [EC:2.7.7.6]
+C    K21081  RPO18; Poxviridae DNA-directed RNA polymerase 18 kDa subunit [EC:2.7.7.6]
+C    K25268  POL; Orthopoxvirus DNA polymerase [EC:2.7.7.7 3.1.11.-]
+C    K21315  PAPL; Poxviridae poly(A) polymerase catalytic subunit [EC:2.7.7.19]
+C    K21506  VPK1; Orthopoxvirus serine/threonine-protein kinase 1 [EC:2.7.11.1]
+C    K21518  VPK2; Orthopoxvirus serine/threonine-protein kinase 2 [EC:2.7.11.1]
+C    K25266  UNG; Orthopoxvirus uracil-DNA glycosylase [EC:3.2.2.27]
+C    K25927  I7L; Poxviridae core protease I7 [EC:3.4.22.-]
+C    K21517  NPH1; Orthopoxvirus nucleoside triphosphatase I [EC:3.6.1.15]
+C    K21505  NPH2; Orthopoxvirus RNA helicase NPH-II [EC:3.6.4.13]
+C    K21519  A18R; Orthopoxvirus transcript termination protein [EC:5.6.2.4]
+C    K25267  D5R; Orthopoxvirus primase D5
+C    K21082  A20R; Chordopoxvirinae DNA polymerase processivity factor component
+C    K25269  I3L; Orthopoxvirus ssDNA-binding phosphoprotein
+C    K21080  RAP94; Chordopoxvirinae RNA polymerase-associated transcription-specificity factor
+C    K25270  H5; Orthopoxvirus late transcription elongation factor H5
+C    K21537  SPI-2; Orthopoxvirus serine proteinase inhibitor 2
+C    K21536  VGF-1; Orthopoxvirus pro-vaccinia growth factor
+C    K12969  E3L; Vaccinia virus protein E3
+C    K25071  A26L; Orthopoxvirus protein A26
+C    K19263  A27L; Orthopoxvirus protein A27
+C    K24601  F9; Orthopoxvirus protein F9
+C    K24602  G3L; Orthopoxvirus protein G3
+C    K24605  I2L; Orthopoxvirus protein I2
+C    K24607  L1R; Orthopoxvirus protein L1
+C    K24608  L5R; Orthopoxvirus protein L5
+C    K21529  A28L; Orthopoxvirus envelope protein A28
+C    K24600  A21L; Orthopoxvirus virion membrane protein A21
+C    K24603  G9R; Orthopoxvirus myristoylated protein G9
+C    K24604  H2R; Orthopoxvirus late protein H2
+C    K24599  HA; Orthopoxvirus hemagglutinin
+B  Variola virus
+C    K24606  J5L, L5L; Orthopoxvirus protein J5
+B  Varicella Zoster Virus (Human alphaherpesvirus 3)
+C    K24958  gE; Varicella-zoster virus envelope glycoprotein E
+B  Murine cytomegalovirus (Murid betaherpesvirus 1)
+C    K12970  M45; Murid betaherpesvirus 1 ribonucleoside-diphosphate reductase [EC:1.17.4.1]
+B  Orgyia pseudotsugata multicapsid polyhedrosis virus
+C    K21504  IAP3; Baculoviridae E3 ubiquitin-protein ligase [EC:2.3.2.27]
+B  Autographa californica nuclear polyhedrosis virus
+C    K18963  pol; Baculovirus DNA polymerase [EC:2.7.7.7]
+C    K21243  LEF-4; Alphabaculovirus DNA-dependent RNA polymerase subunit LEF-4 [EC:2.7.7.50]
+C    K21241  LEF-1; Alphabaculovirus DNA primase [EC:2.7.7.-]
+C    K20741  VCATH; Autographa californica nucleopolyhedrovirus V-cath endopeptidase [EC:3.4.22.50]
+C    K21242  HELI; Baculoviridae DNA replication helicase [EC:5.6.2.-]
+C    K21233  AN; Alphabaculovirus alkaline nuclease
+C    K21244  LEF-2; Alphabaculovirus primase-associated factor LEF-2
+C    K24587  GP64; Alphabaculovirus major envelope glycoprotein
+B  Acanthamoeba polyphaga mimivirus
+C    K21236  L230; Mimivirus procollagen lysyl hydroxylase and glycosyltransferase [EC:1.14.11.4 2.4.1.-]
+B  Paramecium bursaria Chlorella virus 1
+C    K21865  kcv; Chlorovirus potassium channel protein kcv
+B  Herpesvirus saimiri (Saimiriine gammaherpesvirus 2)
+C    K22623  vIL17; Herpesvirus interleukin 17
+B  Molluscum contagiosum virus
+C    K22624  vCCL27; MOCV1 CC chemokine receptor antagonist
+C    K23391  MC053L, MC054L; MOCV1 interleukin 18 binding protein
+B  Marek's disease virus (Gallid alphaherpesvirus 2)
+C    K22625  vIL8; Marek's disease virus interleukin 8 homolog
+B  Wildebeest herpesvirus (Alcelaphine gammaherpesvirus)
+C    K24586  A7; Macavirus C-type lectin protein A7
+AdsDNA viruses (phages)
+B  Bacillus virus Curly
+C    K18969  CURLY_70; Bacillus virus DNA polymerase III epsilon subunit
+B  Bacillus phage phi29 (Bacillus virus phi29)
+C    K21237  gp2; Podoviridae DNA polymerase [EC:2.7.7.7]
+B  Bordetella phage BPP-1 (Bordetella virus BPP1)
+C    K21038  brt; reverse transcriptase [EC:2.7.7.49]
+B  Cyanophage S-2L
+C    K25500  mazZ; dATP/dGTP diphosphohydrolase [EC:3.6.1.-]
+C    K25501  datZ; dATP triphosphohydrolase [EC:3.1.5.-]
+B  Escherichia virus Lambda
+C    K21039  int; enterobacteria phage integrase [EC:2.7.7.- 3.1.-.-]
+C    K01143  exo; exodeoxyribonuclease (lambda-induced) [EC:3.1.11.3]
+C    K21512  gpA; terminase, large subunit [EC:3.1.21.4]
+C    K21511  GPC; capsid assembly protease [EC:3.4.21.-]
+C    K22014  Nu1, Noh; terminase small subunit / prophage DNA-packing protein
+B  Escherichia phage Mu
+C    K07132  MuB; ATP-dependent target DNA activator
+C    K21527  mom; adenine modification enzyme [EC:2.3.1.-]
+C    K21528  gin; serine recombinase [EC:3.1.22.- 6.5.1.-]
+B  Escherichia phage N4
+C    K21239  gp50; virion DNA-directed RNA polymerase [EC:2.7.7.6]
+B  Escherichia phage P1
+C    K21507  dmt; methyltransferase [EC:2.1.1.-]
+B  Escherichia phage RB69
+C    K18943  gp45; DNA polymerase processivity component
+B  Enterobacteria phage T3
+C    K21534  SAMase; S-adenosyl-L-methionine hydrolase (L-homoserine-forming) [EC:3.13.2.2]
+B  Escherichia virus T4
+C    K19796  gp42; dCMP hydroxymethylase [EC:2.1.2.8]
+C    K21521  agt; DNA alpha-glucosyltransferase [EC:2.4.1.26]
+C    K19797  gp1; T-even-induced deoxynucleotide kinase [EC:2.7.4.12]
+C    K18942  gp43; T4 DNA polymerase [EC:2.7.7.7]
+C    K20841  denA; T4 deoxyribonuclease II [EC:3.1.21.8]
+C    K20842  denB; T4 deoxyribonuclease IV [EC:3.1.21.9]
+C    K18950  rnh; ribonuclease H [EC:3.1.26.4]
+C    K21523  gp17; terminase, large subunit [EC:3.1.-.-]
+C    K21524  gp16; terminase, small subunit
+C    K21522  denV; endonuclease V [EC:3.2.2.17]
+C    K21499  dda; ATP-dependent DNA helicase [EC:5.6.2.3]
+C    K18959  uvsW; ATP-dependent DNA helicase UvsW [EC:5.6.2.4]
+C    K05345  regB; T4 restriction endoribonuclease [EC:4.6.1.25]
+C    K18951  gp30; DNA ligase [EC:6.5.1.1]
+C    K18961  rnlA; T4 RNA ligase 1 [EC:6.5.1.3]
+C    K18962  rnlB; T4 RNA ligase 2 [EC:6.5.1.3]
+C    K18948  gp61; DNA primase [EC:2.7.7.-]
+C    K18947  gp41; DNA replication helicase [EC:5.6.2.3]
+C    K18960  gp49; recombination endonuclease VII
+C    K22007  gp55; RNA polymerase sigma factor
+C    K18946  gp32, ssb; single-stranded DNA-binding protein
+C    K21074  mrh; rpoH-modulating protein
+C    K21079  gp23; major capsid protein
+C    K21531  gp18; tail sheath protein
+C    K21530  gp25; baseplate wedge protein
+C    K18949  gp59; protein Gp59
+C    K18944  gp44; sliding clamp loader
+C    K18945  gp62; sliding clamp loader
+B  Escherichia phage T5 (Escherichia virus T5)
+C    K21500  dnk; deoxynucleoside-5'-monophosphate kinase [EC:2.7.4.13]
+C    K21314  pol; T5 DNA polymerase [EC:2.7.7.7]
+C    K21510  dmp; 5'-deoxynucleotidase [EC:3.1.3.89]
+B  Escherichia phage T7
+C    K21313  1; T7 RNA polymerase [EC:2.7.7.6]
+C    K21238  Gp5; T7 DNA-directed DNA polymerase [EC:2.7.7.7]
+C    K21502  Gp4; DNA primase/helicase [EC:2.7.7.- 5.6.2.3]
+C    K21526  Gp6; exonuclease [EC:3.1.11.3]
+C    K21525  Gp3; endonuclease I [EC:3.1.21.2]
+C    K21508  Gp16; peptidoglycan hydrolase [EC:4.2.2.-]
+C    K25280  gp2.5, ssb; T7 single-stranded DNA-binding protein
+B  Prochlorococcus phage P-SSM2
+C    K21796  pebS; phycoerythrobilin synthase [EC:1.3.7.6]
+B  Pseudomonas phage phiKMV
+C    K21509  gp36; peptidoglycan hydrolase [EC:3.2.1.17]
+B  Vibrio phage phiVC8
+C    K24972  purZ; 2-amino-2'-deoxyadenylo-succinate synthase [EC:6.3.4.25]
+B  Others
+C    K21503  56; dCTP pyrophosphatase [EC:3.6.1.12]
+AssDNA viruses
+B  Human parvovirus B19
+C    K25797  VP1_VP2; Erythroparvovirus capsid protein VP1/VP2
+B  Adeno-associated virus
+C    K19252  VP1; Dependoparvovirus capsid protein VP1, adeno-associated virus type
+C    K21240  Rep; Dependoparvovirus virus replication protein
+B  Abutilon mosaic virus
+C    K21234  BC1; Begomovirus movement protein BC1
+C    K21235  BR1, BV1; Begomovirus nuclear shuttle protein
+B  Bean yellow dwarf virus
+C    K21520  C1; Bean yellow dwarf virus replication-associated protein A [EC:3.1.21.-]
+!
+#
+#[ Virus | BRITE | KEGG2 | KEGG ]
+#Last updated: July 14, 2022

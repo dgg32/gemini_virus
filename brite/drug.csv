@@ -1,0 +1,134 @@
+ko,name
+D01275,Doxorubicin hydrochloride
+D02745,Interferon alfa-2b
+D01068,Vinblastine sulfate
+D10316,Nivolumab
+D10574,Pembrolizumab
+D06503,Pemetrexed sodium hydrate
+D00491,Paclitaxel
+D10817,Avelumab
+D02500,Imiquimod
+D10192,Recombinant adsorbed quadrivalent human papillomavirus virus-like particle vaccine
+D02748,Peginterferon alfa-2b
+D02815,Alitretinoin
+D00777,Amantadine hydrochloride
+D00975,Dexamethasone sodium phosphate
+D00088,Hydrocortisone
+D00973,Cortisone acetate
+D02691,Somatropin
+D11875,Ansuvimab
+D11922,"Atoltivimab, maftivimab and odesivimab"
+D00222,Acyclovir
+D02764,Acyclovir sodium
+D05407,Penciclovir
+D00333,Ganciclovir
+D00317,Famciclovir
+D00398,Valacyclovir hydrochloride
+D00579,Foscarnet sodium
+D00391,Trifluridine
+D11627,Acyclovir and hydrochortisone
+D06284,Varicella-zoster immune globulin
+D04301,Ganciclovir sodium
+D00273,Cidofovir
+D03256,Valganciclovir hydrochloride
+D04859,Maribavir
+D10801,Letermovir
+D10547,Brincidofovir
+D11557,Tecovirimat monohydrate
+D06504,Rabies vaccine
+D12206,Tick-borne encephalitis vaccine
+D12227,"Dengue tetravalent vaccine, live"
+D06347,Yellow fever vaccine
+D00901,Rimantadine hydrochloride
+D00902,Zanamivir
+D00900,Oseltamivir phosphate
+D03829,Peramivir
+D11021,Baloxavir marboxil
+D00423,Ribavirin
+D02737,Palivizumab
+D00353,Lamivudine
+D01982,Tenofovir disoproxil fumarate
+D01655,Adefovir dipivoxil
+D04008,Entecavir
+D06675,Telbivudine
+D10605,Tenofovir alafenamide fumarate
+D04431,Hepatitis B immune globulin
+D02747,Peginterferon alfa-2a
+D10469,Simeprevir sodium
+D10366,Sofosbuvir
+D10578,Ledipasvir and sofosbuvir
+D10582,"Dasabuvir, ombitasvir, paritaprevir and ritonavir"
+D10745,"Ombitasvir, paritaprevir and ritonavir"
+D10778,Elbasvir and grazoprevir
+D10827,Sofosbuvir and velpatasvir
+D10900,"Sofosbuvir, velpatasvir and voxilaprevir"
+D11014,Glecaprevir and pibrentasvir
+D11878,Bulevirtide acetate
+D10193,"Live attenuated human rota virus vaccine, oral"
+D10211,"Rotavirus vaccine, live, oral, pentavalent"
+D05529,Podofilox
+D08997,Sinecatechins
+D01160,Saquinavir mesylate
+D00897,Indinavir sulfate
+D00427,Ritonavir
+D00899,Nelfinavir mesylate
+D03835,Fosamprenavir calcium
+D01276,Atazanavir sulfate
+D08605,Tipranavir
+D06478,Darunavir ethanolate
+D00413,Zidovudine
+D00296,Didanosine
+D00445,Stavudine
+D00891,Abacavir sulfate
+D01199,Emtricitabine
+D00435,Nevirapine
+D00895,Delavirdine mesylate
+D00896,Efavirenz
+D04112,Etravirine
+D09958,Rilpivirine hydrochloride
+D10624,Doravirine
+D07133,Raltegravir potassium
+D06677,Elvitegravir
+D10113,Dolutegravir sodium
+D07507,Zidovudine and lamivudine
+D08775,Abacavir sulfate and lamivudine
+D02297,Emtricitabine and tenofovir disoproxil
+D10838,"Abacavir, lamivudine and zidovudine"
+D11521,"Lamivudine, nevirapine and zidovudine"
+D10851,"Efavirenz, emtricitabine and tenofovir disoproxil"
+D10571,"Rilpivirine hydrochloride, tenofovir disoproxil fumarate and emtricitabine"
+D10756,"Elvitegravir, cobicistat, emtricitabine and tenofovir disoproxil"
+D02498,Lopinavir and ritonavir
+D11392,"Efavirenz, lamivudine and tenofovir disoproxil fumarate"
+D11395,Lamivudine and tenofovir disoproxil
+D10600,"Dolutegravir, abacavir and lamivudine"
+D10832,Darunavir and cobicistat
+D10753,Atazanavir and cobicistat
+D10835,Emtricitabine and tenofovir alafenamide
+D10755,"Elvitegravir, cobicistat, emtricitabine and tenofovir alafenamide"
+D10836,"Emtricitabine, rilpivirine and tenofovir alafenamide"
+D11039,"Bictegravir, emtricitabine and tenofovir alafenamide"
+D11282,Dolutegravir sodium and rilpivirine hydrochloride
+D11382,"Darunavir, cobicistat, emtricitabine and tenofovir alafenamide"
+D11396,"Doravirine, lamivudine and tenofovir disoproxil"
+D11522,Dolutegravir and lamivudine
+D02499,Enfuvirtide
+D06670,Maraviroc
+D09575,Ibalizumab
+D10708,Fostemsavir tromethamine
+D09881,Cobicistat
+D11966,Cabotegravir and rilpivirine
+D06271,Vaccinia immune globulin
+D11472,Remdesivir
+D12262,Tixagevimab and cilgavimab
+D11971,Tozinameran
+D12114,Elasomeran
+D12115,COVID-19 vaccine
+D12129,COVID-19 vaccine
+D11936,Bamlanivimab
+D11943,Molnupiravir
+D11944,Etesevimab
+D12014,Sotrovimab
+D12174,Bebtelovimab
+D12269,Nirmatrelvir and ritonavir
+D12336,SARS-CoV-2 Spike glycoprotein vaccine antigen nvx-cov2373
