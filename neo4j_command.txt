@@ -5,6 +5,9 @@ LOAD CSV WITH HEADERS FROM 'file:///host_taxon.csv' AS row MERGE (t:Taxon {taxid
 LOAD CSV WITH HEADERS FROM 'file:///host_taxon_connections.csv' AS row MERGE (f1:Taxon {taxid: row.from}) MERGE (f2:Taxon {taxid: row.to}) MERGE (f1)-[r:HAS_TAXON]->(f2);
 LOAD CSV WITH HEADERS FROM 'file:///taxon_connections.csv' AS row MERGE (f1:Taxon {taxid: row.from}) MERGE (f2:Taxon {taxid: row.to}) MERGE (f1)-[r:HAS_TAXON]->(f2);
 
+CREATE CONSTRAINT ON (t:Type) ASSERT t.name IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///type.csv' AS row MERGE (t:Type {name: row.name});
+
 CREATE CONSTRAINT ON (k:Protein) ASSERT k.ko_id IS UNIQUE;
 LOAD CSV WITH HEADERS FROM 'file:///kegg.csv' AS row MERGE (k:Protein {ko_id: row.ko, description: row.description});
 
