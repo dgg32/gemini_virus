@@ -1,0 +1,27 @@
+CREATE CONSTRAINT ON (t:Taxon) ASSERT t.taxid IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///taxon.csv' AS row MERGE (t:Taxon {taxid: row.taxid, rank: row.rank, name: row.name});
+LOAD CSV WITH HEADERS FROM 'file:///host_taxon.csv' AS row MERGE (t:Taxon {taxid: row.taxid, rank: row.rank, name: row.name});
+
+LOAD CSV WITH HEADERS FROM 'file:///host_taxon_connections.csv' AS row MERGE (f1:Taxon {taxid: row.from}) MERGE (f2:Taxon {taxid: row.to}) MERGE (f1)-[r:HAS_TAXON]->(f2);
+LOAD CSV WITH HEADERS FROM 'file:///taxon_connections.csv' AS row MERGE (f1:Taxon {taxid: row.from}) MERGE (f2:Taxon {taxid: row.to}) MERGE (f1)-[r:HAS_TAXON]->(f2);
+
+CREATE CONSTRAINT ON (k:Protein) ASSERT k.ko_id IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///kegg.csv' AS row MERGE (k:Protein {ko_id: row.ko, description: row.description});
+
+CREATE CONSTRAINT ON (k:Disease) ASSERT k.ko_id IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///disease.csv' AS row MERGE (k:Disease {ko_id: row.ko, description: row.description, name: row.name, category: row.disease_category});
+
+CREATE CONSTRAINT ON (k:Drug) ASSERT k.ko_id IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///drug.csv' AS row MERGE (k:Drug {ko_id: row.ko, name: row.name});
+
+
+LOAD CSV WITH HEADERS FROM 'file:///drug_disease.csv' AS row MERGE (f1:Drug {ko_id: row.from}) MERGE (f2:Disease {ko_id: row.to}) MERGE (f1)-[r:TREATS]->(f2);
+
+LOAD CSV WITH HEADERS FROM 'file:///type_taxon_connections.csv' AS row MERGE (f1:Type {taxid: row.type}) MERGE (f2:Taxon {taxid: row.taxid}) MERGE (f2)-[r:IS_A]->(f1);
+
+LOAD CSV WITH HEADERS FROM 'file:///virus_disease.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Disease {taxid: row.disease_ko}) MERGE (f1)-[r:CAUSES]->(f2);
+
+
+LOAD CSV WITH HEADERS FROM 'file:///taxon_kegg.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Protein {ko_id: row.ko}) MERGE (f1)-[r:HAS]->(f2);
+
+LOAD CSV WITH HEADERS FROM 'file:///virus_host_connection.csv' AS row MERGE (f1:Taxon {taxid: row.`virus tax id`}) MERGE (f2:Taxon {taxid: row.`host tax id`}) MERGE (f1)-[r:INFECTS]->(f2);

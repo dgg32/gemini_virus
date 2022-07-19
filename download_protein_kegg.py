@@ -83,7 +83,7 @@ for line in detail.split("\n"):
                         if f in cache:
                             taxid = cache[f]
 
-                            with open("brite/kegg_protein.csv", "a") as output:
+                            with open("brite/taxon_kegg.csv", "a") as output:
                                 output.write(f"{taxid},{ko}\n")
                             #print (f"{taxid},{ko}")
             kegg_done.add(ko)
