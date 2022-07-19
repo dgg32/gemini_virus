@@ -17,9 +17,9 @@ LOAD CSV WITH HEADERS FROM 'file:///drug.csv' AS row MERGE (k:Drug {ko_id: row.k
 
 LOAD CSV WITH HEADERS FROM 'file:///drug_disease.csv' AS row MERGE (f1:Drug {ko_id: row.from}) MERGE (f2:Disease {ko_id: row.to}) MERGE (f1)-[r:TREATS]->(f2);
 
-LOAD CSV WITH HEADERS FROM 'file:///type_taxon_connections.csv' AS row MERGE (f1:Type {taxid: row.type}) MERGE (f2:Taxon {taxid: row.taxid}) MERGE (f2)-[r:IS_A]->(f1);
+LOAD CSV WITH HEADERS FROM 'file:///type_taxon_connections.csv' AS row MERGE (f1:Type {name: row.type}) MERGE (f2:Taxon {taxid: row.taxid}) MERGE (f2)-[r:IS_A]->(f1);
 
-LOAD CSV WITH HEADERS FROM 'file:///virus_disease.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Disease {taxid: row.disease_ko}) MERGE (f1)-[r:CAUSES]->(f2);
+LOAD CSV WITH HEADERS FROM 'file:///virus_disease.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Disease {ko_id: row.disease_ko}) MERGE (f1)-[r:CAUSES]->(f2);
 
 
 LOAD CSV WITH HEADERS FROM 'file:///taxon_kegg.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Protein {ko_id: row.ko}) MERGE (f1)-[r:HAS_PROTEIN]->(f2);
