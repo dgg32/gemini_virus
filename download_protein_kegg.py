@@ -1,20 +1,28 @@
 import requests
 import re
+import os
 
-kegg_page = "https://rest.kegg.jp/get/br:ko03200"
+detail = ""
 
-detail = requests.get(kegg_page).text
+if not os.path.isfile("brite/brite_ko.txt"):
+    kegg_page = "https://rest.kegg.jp/get/br:ko03200"
 
-with open("brite/brite_ko.txt", "w") as output:
-    output.write(detail)
+    detail = requests.get(kegg_page).text
+
+    with open("brite/brite_ko.txt", "w") as output:
+        output.write(detail)
+else:
+    with open("brite/brite_ko.txt", "r") as input:
+        detail = input.read()
 
 rx_entry = re.compile(r'\w\s+(K\d+)')
-rx_gene_id = re.compile(r'(\S+)\(\w+\)')
+rx_prefix = re.compile(r'GENES\s+(\w+):')
+rx_gene_id = re.compile(r'(\S+)\(\S+\)')
 rx_tax = re.compile(r'TAX:(\d+)')
 
 kegg_url_prefix = "https://rest.kegg.jp/get/"
 
-kegg_gene_prefix = "https://rest.kegg.jp/get/vg:"
+kegg_gene_prefix = "https://rest.kegg.jp/get/"
 
 cache = {}
 
@@ -28,6 +36,12 @@ with open("brite/kegg_protein_cache.csv", "r") as input:
 # with open("brite/kegg_protein.csv", "w") as output:
 #     output.write(content)
 
+output_file = "import/taxon_kegg.csv"
+
+if not os.path.isfile(output_file):
+   
+    with open(output_file, "w") as output:
+        output.write(f"taxid,ko\n")
 
 kegg_done = set()
 
@@ -36,6 +50,7 @@ with open("brite/kegg_done.csv", "r") as input:
     for line in lines:
         kegg_done.add(line.strip())
     
+is_gene = False
 
 for line in detail.split("\n"):
 
@@ -55,11 +70,22 @@ for line in detail.split("\n"):
 
             for line in kegg_page.split("\n"):
                 if line.startswith("GENES"):
+
+                    is_gene = True
+
+                if is_gene:
+                    search_prefix = rx_prefix.search(line)
+                    prefix = ""
+                    if search_prefix:
+                        prefix = search_prefix.group(1).lower()
+
+                    #print (line)
                     fields = re.findall(rx_gene_id, line)
+                    #print (fields)
                     for f in fields:
                         
                         if f not in cache:
-                            kegg_gene_url = kegg_gene_prefix + f
+                            kegg_gene_url = kegg_gene_prefix + prefix + ":" +  f
                             #print (kegg_gene_url)
                             kegg_gene_page = requests.get(kegg_gene_url).text
                             
@@ -83,7 +109,7 @@ for line in detail.split("\n"):
                         if f in cache:
                             taxid = cache[f]
 
-                            with open("import/taxon_kegg.csv", "a") as output:
+                            with open(output_file, "a") as output:
                                 output.write(f"{taxid},{ko}\n")
                             #print (f"{taxid},{ko}")
             kegg_done.add(ko)

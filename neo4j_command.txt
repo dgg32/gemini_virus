@@ -8,23 +8,24 @@ LOAD CSV WITH HEADERS FROM 'file:///taxon_connections.csv' AS row MERGE (f1:Taxo
 CREATE CONSTRAINT ON (t:Type) ASSERT t.name IS UNIQUE;
 LOAD CSV WITH HEADERS FROM 'file:///type.csv' AS row MERGE (t:Type {name: row.name});
 
-CREATE CONSTRAINT ON (k:KEGG) ASSERT k.ko_id IS UNIQUE;
-LOAD CSV WITH HEADERS FROM 'file:///kegg.csv' AS row MERGE (k:KEGG {ko_id: row.ko, description: row.description});
+CREATE CONSTRAINT ON (k:Kegg) ASSERT k.kegg_id IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///kegg.csv' AS row MERGE (k:Kegg {kegg_id: row.kegg, description: row.description});
 
-CREATE CONSTRAINT ON (k:Disease) ASSERT k.ko_id IS UNIQUE;
-LOAD CSV WITH HEADERS FROM 'file:///disease.csv' AS row MERGE (k:Disease {ko_id: row.ko, description: row.description, name: row.name, category: row.disease_category});
+CREATE CONSTRAINT ON (k:Disease) ASSERT k.disease_id IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///disease.csv' AS row MERGE (k:Disease {disease_id: row.ko, description: row.description, name: row.name, category: row.disease_category});
 
-CREATE CONSTRAINT ON (k:Drug) ASSERT k.ko_id IS UNIQUE;
-LOAD CSV WITH HEADERS FROM 'file:///drug.csv' AS row MERGE (k:Drug {ko_id: row.ko, name: row.name});
+CREATE CONSTRAINT ON (k:Drug) ASSERT k.drug_id IS UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///drug.csv' AS row MERGE (k:Drug {drug_id: row.drug_id, name: row.name, mol_weight: toFloat(row.mol_weight), efficacy: row.efficacy});
 
+LOAD CSV WITH HEADERS FROM 'file:///drug_kegg.csv' AS row MERGE (f1:Drug {drug_id: row.drug_id}) MERGE (f2:Kegg {kegg_id: row.kegg_id}) MERGE (f1)-[r:TARGETS]->(f2);
 
-LOAD CSV WITH HEADERS FROM 'file:///drug_disease.csv' AS row MERGE (f1:Drug {ko_id: row.from}) MERGE (f2:Disease {ko_id: row.to}) MERGE (f1)-[r:TREATS]->(f2);
+LOAD CSV WITH HEADERS FROM 'file:///drug_disease.csv' AS row MERGE (f1:Drug {drug_id: row.from}) MERGE (f2:Disease {disease_id: row.to}) MERGE (f1)-[r:TREATS]->(f2);
 
 LOAD CSV WITH HEADERS FROM 'file:///type_taxon_connections.csv' AS row MERGE (f1:Type {name: row.type}) MERGE (f2:Taxon {taxid: row.taxid}) MERGE (f2)-[r:IS_A]->(f1);
 
-LOAD CSV WITH HEADERS FROM 'file:///virus_disease.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Disease {ko_id: row.disease_ko}) MERGE (f1)-[r:CAUSES]->(f2);
+LOAD CSV WITH HEADERS FROM 'file:///virus_disease.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Disease {disease_id: row.disease_ko}) MERGE (f1)-[r:CAUSES]->(f2);
 
 
-LOAD CSV WITH HEADERS FROM 'file:///taxon_kegg.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:KEGG {ko_id: row.ko}) MERGE (f1)-[r:HAS_KEGG]->(f2);
+LOAD CSV WITH HEADERS FROM 'file:///taxon_kegg.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Kegg {kegg_id: row.ko}) MERGE (f1)-[r:HAS_KEGG]->(f2);
 
-LOAD CSV WITH HEADERS FROM 'file:///virus_host_connection.csv' AS row MERGE (f1:Taxon {taxid: row.`virus tax id`}) MERGE (f2:Taxon {taxid: row.`host tax id`}) MERGE (f1)-[r:INFECTS]->(f2);
+LOAD CSV WITH HEADERS FROM 'file:///virus_host_connection.csv' AS row MERGE (f1:Taxon {taxid: row.virus_taxid}) MERGE (f2:Taxon {taxid: row.host_taxid}) MERGE (f1)-[r:INFECTS]->(f2);
