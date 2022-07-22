@@ -1,6 +1,7 @@
 import requests
 import re
 import os
+from pyphy import pyphy
 
 detail = ""
 
@@ -16,13 +17,11 @@ else:
         detail = input.read()
 
 rx_entry = re.compile(r'\w\s+(K\d+)')
-rx_prefix = re.compile(r'GENES\s+(\w+):')
+rx_prefix = re.compile(r'\s+(\w+):')
 rx_gene_id = re.compile(r'(\S+)\(\S+\)')
 rx_tax = re.compile(r'TAX:(\d+)')
 
 kegg_url_prefix = "https://rest.kegg.jp/get/"
-
-kegg_gene_prefix = "https://rest.kegg.jp/get/"
 
 cache = {}
 
@@ -50,11 +49,11 @@ with open("brite/kegg_done.csv", "r") as input:
     for line in lines:
         kegg_done.add(line.strip())
     
-is_gene = False
+virus_taxid = pyphy.getTaxidByName("Viruses")[0]
 
 for line in detail.split("\n"):
 
-        
+    
     search_entry = rx_entry.search(line)
     #print (line)
     if search_entry:
@@ -67,10 +66,15 @@ for line in detail.split("\n"):
             #print (kegg_url)
             kegg_page = requests.get(kegg_url).text
             
+            is_gene = False
 
             for line in kegg_page.split("\n"):
-                if line.startswith("GENES"):
 
+                if not line.startswith(" "):
+                    is_gene = False
+        
+
+                if line.startswith("GENES"):
                     is_gene = True
 
                 if is_gene:
@@ -84,8 +88,9 @@ for line in detail.split("\n"):
                     #print (fields)
                     for f in fields:
                         
+                        #print (f, f in cache)
                         if f not in cache:
-                            kegg_gene_url = kegg_gene_prefix + prefix + ":" +  f
+                            kegg_gene_url = kegg_url_prefix + prefix + ":" +  f
                             #print (kegg_gene_url)
                             kegg_gene_page = requests.get(kegg_gene_url).text
                             
@@ -102,9 +107,13 @@ for line in detail.split("\n"):
 
                                         cache[f] = taxid
 
-                                        with open("brite/kegg_protein_cache.csv", "a") as output:
-                                            temp = f"{f},{taxid}\n"
-                                            output.write(temp)
+                                        dictpath = pyphy.getDictPathByTaxid(taxid)
+                                        print (dictpath)
+                                        if "superkingdom" in dictpath and dictpath["superkingdom"] == virus_taxid:
+
+                                            with open("brite/kegg_protein_cache.csv", "a") as output:
+                                                temp = f"{f},{taxid}\n"
+                                                output.write(temp)
                         
                         if f in cache:
                             taxid = cache[f]
