@@ -29,3 +29,6 @@ LOAD CSV WITH HEADERS FROM 'file:///virus_disease.csv' AS row MERGE (f1:Taxon {t
 LOAD CSV WITH HEADERS FROM 'file:///taxon_kegg.csv' AS row MERGE (f1:Taxon {taxid: row.taxid}) MERGE (f2:Kegg {kegg_id: row.ko}) MERGE (f1)-[r:HAS_KEGG]->(f2);
 
 LOAD CSV WITH HEADERS FROM 'file:///virus_host_connection.csv' AS row MERGE (f1:Taxon {taxid: row.virus_taxid}) MERGE (f2:Taxon {taxid: row.host_taxid}) MERGE (f1)-[r:INFECTS]->(f2);
+
+
+MATCH (n:Kegg)<-[:HAS_KEGG]-(t:Taxon) <-[:HAS_TAXON*..15]-(t2:Taxon {name: "Viruses"}) RETURN DISTINCT(n.kegg_id)
