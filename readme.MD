@@ -20,7 +20,7 @@ This repository contains code and data for my article "[I Built the Same Virus K
 
 # Prerequisite
 
-Python
+Python with the pyphy package (pip install pyphy)
 
 Neo4j
 
